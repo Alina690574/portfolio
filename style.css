@@ -1,0 +1,353 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: #2c426b;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+    margin-top: 60px;
+  }
+  /* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* पूर्ण स्क्रिन उचाइ */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.intro {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.slider {
+  max-width: 50%;
+  width: 100%;
+  height: 100%; /* पूर्ण स्क्रिन उचाइ */
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.slide {
+  width: 100%;
+  height: 100%; /* पूर्ण स्क्रिन उचाइ */
+  object-fit: cover; /* छविलाई स्क्रिनमा फिट गर्न */
+  display: none;
+  
+}
+
+.slide.active {
+  display: block;
+}
+  /* About Me Section */
+  .about {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url('image/background-image.jpg'); /* पृष्ठभूमि छवि */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(8px); /* पृष्ठभूमि छवि ब्लर गर्न */
+    z-index: 1;
+  }
+  
+  .about-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .about-header h2 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; */
+  }
+  
+  .about-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%; /* गोलाकार छवि */
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    color: #333;
+    font-size: 1.2rem;
+  }
+
+
+
+  
+  .resume {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333d60;
+    box-shadow: 0 0 10px #316bd61a;
+    text-align: center;
+  }
+  
+  .resume h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .professional-summary {
+    margin-bottom: 20px;
+  }
+  
+  .professional-summary h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .professional-summary p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+.full-screen-section {
+  display: flex; 
+  gap: 20px; 
+  width: 100%; 
+}
+  
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+  .education, .experience, .skills {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education h2, .experience h2, .skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bdd3e8;
+    padding-bottom:5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  ul li ul {
+    margin-left: 20px;
+  }
+  
+  ul li ul li {
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #283c4f;
+  }
+
+  .about, .resume, .contact {
+    background: #828d97;
+    margin: 1rem 0;
+    padding: 2rem;
+  }
+ 
+
+.contact {
+  text-align: center;
+  width: 100;
+  
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px; 
+ margin-left: 150px;
+  align-items: flex-start; 
+}
+
+.contact-info {
+  flex: 1; 
+  text-align: left;
+  padding: 0;
+  
+}
+
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #09121b;
+  font-size: 1.5rem;
+  color: #0a1c2f;
+  margin-right: 15px;
+  
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  background-color: #fff;
+  margin-right: 50px;
+  flex: 2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form label {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact form input, .contact form textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact form textarea {
+  resize: vertical;
+}
+
+.contact form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #7ed9da;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact form button:hover {
+  background: #3993f9;
+}
+/*   
+  .social-media {
+    margin-top: 1rem;
+  }
+  
+  .social-media a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #333;
+  } */
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .slider {
+      height: 300px;
+    }
+  }
